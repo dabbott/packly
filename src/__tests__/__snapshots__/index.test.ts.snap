@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`scripts inlines a script 1`] = `
+"<!DOCTYPE html><html lang=\\"en\\"><head>
+      <meta charset=\\"utf-8\\">
+      <title>My page</title>
+      <script>console.log('Hello, world!');</script>
+    </head>
+    <body>
+      <p>Hello, world!</p>
+    
+  </body></html>"
+`;
+
+exports[`styles inlines a style 1`] = `
+"<!DOCTYPE html><html lang=\\"en\\"><head>
+      <meta charset=\\"utf-8\\">
+      <title>My page</title>
+      <style>body { background: #222; }</style>
+    </head>
+    <body>
+      <p>Hello, world!</p>
+    
+  </body></html>"
+`;
