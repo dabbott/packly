@@ -1,6 +1,6 @@
 {
   "name": "packly",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An html bundler",
   "main": "lib/index.js",
   "files": [
