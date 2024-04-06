@@ -163,7 +163,7 @@ export function extractResources(html: string): Resource[] {
 
         if (src) {
           resources.push({
-            mime: 'application/javascript',
+            mime: 'text/javascript',
             type: 'linked',
             url: src.value,
           })
@@ -173,7 +173,7 @@ export function extractResources(html: string): Resource[] {
           if (!textContent) return
 
           resources.push({
-            mime: 'application/javascript',
+            mime: 'text/javascript',
             type: 'inline',
             content: textContent.value.trim(),
           })

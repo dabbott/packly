@@ -31,10 +31,10 @@ describe('extracts', () => {
     </html>`)
 
     expect(result).toEqual([
-      { type: 'linked', mime: 'application/javascript', url: 'main.js' },
+      { type: 'linked', mime: 'text/javascript', url: 'main.js' },
       {
         type: 'inline',
-        mime: 'application/javascript',
+        mime: 'text/javascript',
         content: `console.log('Hello, world!')`,
       },
     ])
