@@ -151,7 +151,7 @@ export function extractResources(html: string): Resource[] {
         if (!href) return
 
         resources.push({
-          mime: 'text/css',
+          mime: mime.lookup(href.value) || 'application/octet-stream',
           type: 'linked',
           url: href.value,
         })

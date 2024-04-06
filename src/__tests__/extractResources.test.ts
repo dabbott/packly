@@ -82,4 +82,22 @@ describe('extracts', () => {
       { type: 'linked', mime: 'image/jpeg', url: 'image.jpg' },
     ])
   })
+
+  it('other', () => {
+    const result = extractResources(`<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <title>My page</title>
+        <link rel="icon" href="favicon.ico">
+      </head>
+      <body>
+        <p>Hello, world!</p>
+      </body>
+    </html>`)
+
+    expect(result).toEqual([
+      { type: 'linked', mime: 'image/vnd.microsoft.icon', url: 'favicon.ico' },
+    ])
+  })
 })
